@@ -89,6 +89,8 @@ module.exports = {
 
   plugins: ['import', 'flowtype', 'jsx-a11y', 'react'],
 
+  extends: ['airbnb'],
+
   env: {
     browser: true,
     commonjs: true,
@@ -291,5 +293,55 @@ module.exports = {
     'flowtype/define-flow-type': 'warn',
     'flowtype/require-valid-file-annotation': 'warn',
     'flowtype/use-flow-type': 'warn',
+
+    //recruit-config
+    'linebreak-style': 0,
+    'comma-dangle': 0,
+    indent: 0,
+    'react/jsx-indent': 0,
+    'react/jsx-indent-props': 0,
+    'key-spacing': 0,
+    'max-len': 0,
+    'react/jsx-space-before-closing': 0,
+    'react/prefer-stateless-function': 0,
+    'jsx-a11y/no-noninteractive-element-to-interactive-role': 0,
+    'jsx-a11y/interactive-supports-focus': 0,
+    'object-curly-spacing': 0,
+    'padded-blocks': 0,
+    'no-multi-spaces': 0,
+    'no-shadow': 0,
+    'no-param-reassign': 0,
+    'react/sort-comp': 0,
+    'guard-for-in': 0,
+    'brace-style': ['error', 'stroustrup'],
+    'arrow-body-style': 0,
+    'quote-props': ['error', 'as-needed'],
+    'spaced-comment': 0,
+    'react/jsx-closing-bracket-location': 0,
+    'react/jsx-tag-spacing': 0,
+    'react/no-array-index-key': 0,
+    'react/require-default-props': 0,
+    'react/jsx-filename-extension': 0,
+    'react/forbid-prop-types': [
+      'error',
+      {
+        forbid: ['any'],
+      },
+    ],
+    'react/jsx-no-bind': [
+      'error',
+      {
+        ignoreRefs: true,
+      },
+    ],
+    'react/jsx-max-props-per-line': [0, { maximum: 3 }],
+    'class-methods-use-this': 0,
+    'no-underscore-dangle': 0,
+    'jsx-a11y/no-static-element-interactions': 0,
+    'no-confusing-arrow': 0,
+    'react/no-string-refs': 0,
+    'react/jsx-first-prop-new-line': 0,
+    'eol-last': 0,
+    semi: ['error', 'never'],
   },
 };

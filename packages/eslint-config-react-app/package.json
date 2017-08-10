@@ -1,5 +1,5 @@
 {
-  "name": "eslint-config-react-app",
+  "name": "eslint-config-recruit-react-app",
   "version": "2.1.0",
   "description": "ESLint configuration used by Create React App",
   "repository": "facebookincubator/create-react-app",
@@ -17,5 +17,8 @@
     "eslint-plugin-import": "^2.6.0",
     "eslint-plugin-jsx-a11y": "^5.1.1",
     "eslint-plugin-react": "^7.1.0"
+  },
+  "dependencies": {
+    "eslint-config-airbnb": "^15.1.0"
   }
 }
