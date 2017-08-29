@@ -225,6 +225,7 @@ module.exports = {
     'unicode-bom': ['warn', 'never'],
     'use-isnan': 'warn',
     'valid-typeof': 'warn',
+    'no-debugger': 'warn',
     'no-restricted-properties': [
       'error',
       // TODO: reenable once import() is no longer slow.
