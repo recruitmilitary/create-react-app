@@ -7,6 +7,8 @@
 
 'use strict';
 
+var path = require('path');
+
 // Inspired by https://github.com/airbnb/javascript but less opinionated.
 
 // We use eslint-loader so even warnings are very visible.
@@ -90,6 +92,14 @@ module.exports = {
   plugins: ['import', 'flowtype', 'jsx-a11y', 'react'],
 
   extends: ['airbnb'],
+
+  settings: {
+    'import/resolver': {
+      webpack: {
+        config: path.join(__dirname, '../../config/webpack.config.dev.js'),
+      },
+    },
+  },
 
   env: {
     browser: true,
