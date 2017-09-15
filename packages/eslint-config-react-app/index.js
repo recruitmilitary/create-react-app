@@ -7,7 +7,10 @@
 
 'use strict';
 
-var path = require('path');
+var webpackconfig = require.resolve(
+  'recruit-react-scripts/config/webpack.config.dev'
+);
+process.env.NODE_ENV = process.env.NODE_ENV || 'development';
 
 // Inspired by https://github.com/airbnb/javascript but less opinionated.
 
@@ -96,7 +99,7 @@ module.exports = {
   settings: {
     'import/resolver': {
       webpack: {
-        config: path.join(__dirname, '../../config/webpack.config.dev.js'),
+        config: webpackconfig,
       },
     },
   },
