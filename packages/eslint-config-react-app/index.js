@@ -8,7 +8,7 @@
 'use strict';
 
 var webpackconfig = require.resolve(
-  'recruit-react-scripts/config/webpack.config.dev'
+  'recruit-react-scripts/config/webpack.config'
 );
 process.env.NODE_ENV = process.env.NODE_ENV || 'development';
 
